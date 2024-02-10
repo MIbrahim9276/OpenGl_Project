@@ -1,6 +1,12 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
+#include <common.hpp>
+
+typedef enum {
+  UP, DOWN, LEFT, RIGHT
+} InputType;
+
+map<int, InputType> InputMap;
 
 class Input {
     public:
