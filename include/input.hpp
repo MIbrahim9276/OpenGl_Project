@@ -11,9 +11,8 @@ map<int, InputType> InputMap;
 
 class Input {
     public:
-      Input(GLFWwindow* window);
+        Input(GLFWwindow* window);
     private:
         GLFWwindow* _window;
+        void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 };
-
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
