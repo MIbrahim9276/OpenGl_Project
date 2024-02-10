@@ -1,5 +1,6 @@
 #pragma once
 
-class input {
-    
+class Input {
+    public:
+      Input();
 };
