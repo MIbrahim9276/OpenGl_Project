@@ -8,7 +8,8 @@ typedef enum {
 
 class Input {
   public:
-    Input(GLFWwindow* window);
+    Input();
+    void init(GLFWwindow* window);
     
   private:
     GLFWwindow* _window;
