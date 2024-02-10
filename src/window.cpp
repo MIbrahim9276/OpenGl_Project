@@ -15,6 +15,9 @@ Window::Window(int width, int height, string name):
     }
     glfwMakeContextCurrent(window);
 
+    while(glfwWindowShouldClose(window)){
+      glfwPollEvents();
+    }
 
     glfwDestroyWindow(window);
 
