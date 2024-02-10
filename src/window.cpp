@@ -7,18 +7,19 @@ Window::Window(int width, int height, const string name):
       std::cout << "Failed to initialize" << std::endl;
       
     }
-    GLFWwindow *window = glfwCreateWindow(400, 400, "please for the love of god work", NULL, NULL);
+    _ptr = glfwCreateWindow(400, 400, "please for the love of god work", NULL, NULL);
 
-    if(window == NULL){
+    _input.init(_ptr);
+
+    if(_ptr == NULL){
       std::cout << "something went wrong i don't fucking know" << std::endl;
       
     }
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(_ptr);
 
     while(glfwWindowShouldClose(window)){
       glfwPollEvents();
     }
 
-    glfwDestroyWindow(window);
-
-  }
+    glfwDestroyWindow(_ptr);
+}
