@@ -1,12 +1,19 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
+#include <common.hpp>
+
+typedef enum {
+  UP, DOWN, LEFT, RIGHT
+} InputType;
 
 class Input {
-    public:
-      Input(GLFWwindow* window);
-    private:
-        GLFWwindow* _window;
-};
+  public:
+    Input();
+    void init(GLFWwindow* window);
+    
+  private:
+    GLFWwindow* _window;
+    map<int, InputType> _input_map;
 
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+    static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+};
