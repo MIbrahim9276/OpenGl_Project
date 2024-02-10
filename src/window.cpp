@@ -1,5 +1,5 @@
 #include <window.hpp>
-#include <iostream>
+
 
 Window::Window(int width, int height, string name):
   _width(width), _height(height), _name(name) {
