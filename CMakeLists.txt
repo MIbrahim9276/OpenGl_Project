@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28.1)
-set( CMAKE_CXX_COMPILER "/pathto/g++" )
-set( CMAKE_C_COMPILER "/pathto/gcc" )
+set( CMAKE_CXX_COMPILER "C:\\MinGW\\bin\\g++.exe" )
+set( CMAKE_C_COMPILER "C:\\MinGW\\bin\\gcc.exe" )
 project(main)
 
 aux_source_directory(src src_files)
