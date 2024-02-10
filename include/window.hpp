@@ -11,5 +11,5 @@ class Window {
     bool init();
   
   public:
-    Window(int width, int height, string name);
+    Window(int width, int height, const string name);
 };
