@@ -5,4 +5,4 @@ include_directories(include)
 link_directories(libs)
 
 aux_source_directory(src deps)
-add_dependencies(main deps)
+add_dependencies(main ${deps})
